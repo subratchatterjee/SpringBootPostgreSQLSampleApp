@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQL81Dialect
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: postgres
